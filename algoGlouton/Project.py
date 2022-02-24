@@ -9,6 +9,7 @@ class Project :
         self.deadline = deadline
         self.ressources=[]
         self.duree = duree
+        self.startTime=-1
 
     def addRessource(self, ressource):
         self.ressources.append(ressource)
