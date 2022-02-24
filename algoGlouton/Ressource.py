@@ -10,4 +10,10 @@ class Ressource :
     def toString(self):
 
         return self.name + " : " + str(self.skills) + " : " + str(self.available)
+
+    def match(self, skill, skillLevel):
+        if self.available and self.skills[skill]>=skillLevel:
+            return True
+        return False
+
     
